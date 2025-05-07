@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghad Hotel | services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .services {
+      padding: 20px;
+      display: grid;
+      gap: 20px;
+    }
+    .service-card {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      align-items: center;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .service-card img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .service-text h3 {
+      margin: 0 0 5px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong id="site-title">فندق رغد</strong></div>
+    <nav id="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="rooms.html">الغرف</a>
+      <a href="services.html">الخدمات</a>
+      <a href="offers.html">العروض</a>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div>
+      <button id="lang-toggle" style="margin-left: 10px;">English</button>
+      <button id="book-now" style="background: goldenrod; color: white; padding: 10px 20px; border: none;" data-en="Book Now" data-ar="احجز الآن">احجز الآن</button>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2 data-en="Our Services" data-ar="خدماتنا">خدماتنا</h2>
+
+    <div class="service-card">
+      <img src="Room.jpeg" alt="Room Cleaning">
+      <div class="service-text">
+        <h3 data-en="Daily Room Cleaning" data-ar="تنظيف الغرف يوميًا">تنظيف الغرف يوميًا</h3>
+        <p data-en="Your room will be refreshed and cleaned every day." data-ar="نقوم بتنظيف غرفتك يوميًا لضمان راحتك.">نقوم بتنظيف غرفتك يوميًا لضمان راحتك.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Wifi1.webp" alt="WiFi">
+      <div class="service-text">
+        <h3 data-en="Free Wi-Fi" data-ar="واي فاي مجاني">واي فاي مجاني</h3>
+        <p data-en="High-speed internet throughout the hotel." data-ar="إنترنت سريع ومجاني في جميع أنحاء الفندق.">إنترنت سريع ومجاني في جميع أنحاء الفندق.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Breakfast.jpg" alt="Breakfast">
+      <div class="service-text">
+        <h3 data-en="Complimentary Breakfast" data-ar="إفطار مجاني">إفطار مجاني</h3>
+        <p data-en="Start your day with a delicious hotel breakfast." data-ar="ابدأ يومك بإفطار لذيذ مقدم من الفندق.">ابدأ يومك بإفطار لذيذ مقدم من الفندق.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Pool.webp" alt="Pool">
+      <div class="service-text">
+        <h3 data-en="Swimming Pool" data-ar="مسبح">مسبح</h3>
+        <p data-en="Relax in our clean and modern swimming pool." data-ar="استرخِ في مسبحنا النظيف والعصري.">استرخِ في مسبحنا النظيف والعصري.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Room.webp" alt="Room Service">
+      <div class="service-text">
+        <h3 data-en="24/7 Room Service" data-ar="خدمة الغرف 24/7">خدمة الغرف 24/7</h3>
+        <p data-en="We are here to serve you anytime." data-ar="نحن هنا لخدمتك في أي وقت.">نحن هنا لخدمتك في أي وقت.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="Gym.webp" alt="Gym and Spa">
+      <div class="service-text">
+        <h3 data-en="Gym & Spa" data-ar="نادي صحي وسبا">نادي صحي وسبا</h3>
+        <p data-en="Stay fit and relax in our facilities." data-ar="حافظ على لياقتك واسترخِ في مرافقنا.">حافظ على لياقتك واسترخِ في مرافقنا.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="lang.js"></script>
+</body>
+</html>

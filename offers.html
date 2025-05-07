@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghad Hotel | offers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .offers {
+      padding: 20px;
+      display: grid;
+      gap: 20px;
+    }
+    .offer-card {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      align-items: center;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .offer-card img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .offer-text h3 {
+      margin: 0 0 5px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong id="site-title">فندق رغد</strong></div>
+    <nav id="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="rooms.html">الغرف</a>
+      <a href="services.html">الخدمات</a>
+      <a href="offers.html">العروض</a>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div>
+      <button id="lang-toggle" style="margin-left: 10px;">English</button>
+      <button id="book-now" style="background: goldenrod; color: white; padding: 10px 20px; border: none;" data-en="Book Now" data-ar="احجز الآن">احجز الآن</button>
+    </div>
+  </header>
+
+  <section class="offers">
+    <h2 data-en="Special Offers" data-ar="العروض الخاصة">العروض الخاصة</h2>
+
+    <div class="offer-card">
+      <img src="Summer.jpg" alt="Winter Offer">
+      <div class="offer-text">
+        <h3 data-en="Summer Offer - 30% Off" data-ar="عرض الشتاء - خصم 30%">عرض الشتاء - خصم 30%</h3>
+        <p data-en="Enjoy a sunny summer escape with 30% off room rates." data-ar="استمتع بعطلة شتوية دافئة مع خصم 30% على الغرف.">استمتع بعطلة شتوية دافئة مع خصم 30% على الغرف.</p>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="Romantic.webp" alt="Couples Package">
+      <div class="offer-text">
+        <h3 data-en="Romantic Escape for Couples" data-ar="عطلة رومانسية للأزواج">عطلة رومانسية للأزواج</h3>
+        <p data-en="Special 2-night stay with dinner and spa for two." data-ar="إقامة ليلتين مع عشاء وجلسة سبا لشخصين.">إقامة ليلتين مع عشاء وجلسة سبا لشخصين.</p>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="Kid.jpeg" alt="Family Deal">
+      <div class="offer-text">
+        <h3 data-en="Family Package - Kids Stay Free" data-ar="عرض العائلة - الأطفال مجانًا">عرض العائلة - الأطفال مجانًا</h3>
+        <p data-en="Book a family room and kids under 12 stay free." data-ar="احجز غرفة عائلية والأطفال دون 12 سنة مجانًا.">احجز غرفة عائلية والأطفال دون 12 سنة مجانًا.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="lang.js"></script>
+</body>
+</html>

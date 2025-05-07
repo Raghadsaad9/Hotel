@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghad Hotel | rooms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .rooms {
+      padding: 20px;
+      display: grid;
+      gap: 20px;
+    }
+    .room-card {
+      display: flex;
+      gap: 15px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      align-items: center;
+    }
+    .room-card img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .room-text h3 {
+      margin: 0 0 5px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong id="site-title">فندق رغد</strong></div>
+    <nav id="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="rooms.html">الغرف</a>
+      <a href="services.html">الخدمات</a>
+      <a href="offers.html">العروض</a>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div>
+      <button id="lang-toggle" style="margin-left: 10px;">English</button>
+      <button id="book-now" style="background: goldenrod; color: white; padding: 10px 20px; border: none;" data-en="Book Now" data-ar="احجز الآن">احجز الآن</button>
+    </div>
+  </header>
+
+  <section class="rooms">
+    <h2 data-en="Our Rooms" data-ar="غرفنا">غرفنا</h2>
+
+    <div class="room-card">
+      <img src="Single room.jpg" alt="Single Room">
+      <div class="room-text">
+        <h3 data-en="Single Room" data-ar="غرفة مفردة">غرفة مفردة</h3>
+        <p data-en="Ideal for solo travelers. Includes one bed, Wi-Fi, and a private bathroom." 
+           data-ar="مثالية للمسافرين الفرديين. تحتوي على سرير واحد وإنترنت وحمام خاص.">
+          مثالية للمسافرين الفرديين. تحتوي على سرير واحد وإنترنت وحمام خاص.
+        </p>
+      </div>
+    </div>
+
+    <div class="room-card">
+      <img src="Deluxe Room.jpg" alt="Double Room">
+      <div class="room-text">
+        <h3 data-en="Double Room" data-ar="غرفة مزدوجة">غرفة مزدوجة</h3>
+        <p data-en="Spacious room with two beds, perfect for couples or friends." 
+           data-ar="غرفة واسعة بسريرين، مثالية للأزواج أو الأصدقاء.">
+          غرفة واسعة بسريرين، مثالية للأزواج أو الأصدقاء.
+        </p>
+      </div>
+    </div>
+
+    <div class="room-card">
+      <img src="Luxury Suite.jpeg" alt="Suite">
+      <div class="room-text">
+        <h3 data-en="Luxury Suite" data-ar="جناح فاخر">جناح فاخر</h3>
+        <p data-en="Enjoy a luxurious stay with living space, king-size bed, and balcony view."
+           data-ar="استمتع بإقامة فاخرة مع غرفة معيشة، سرير كبير، وإطلالة على الشرفة.">
+          استمتع بإقامة فاخرة مع غرفة معيشة، سرير كبير، وإطلالة على الشرفة.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="lang.js"></script>
+</body>
+</html>

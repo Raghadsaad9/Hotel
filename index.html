@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Hotel Dessigned by Raghad | فندق بتصميم رغد </title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div><strong id="site-title">فندق بتصميم رغد</strong></div>
+    <nav id="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="rooms.html">الغرف</a>
+      <a href="services.html">الخدمات</a>
+      <a href="offers.html">العروض</a>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div>
+      <button id="lang-toggle">English</button>
+      <button id="book-now" class="book-btn" data-en="Book Now" data-ar="احجز الآن">احجز الآن</button>
+    </div>
+  </header>
+
+  <section class="hero">
+<h1 data-en="Welcome to the Luxury Hotel" data-ar="مرحبًا بك في فندق الفخامة">مرحبًا بك في فندق الفخامة</h1>
+  <p id="hero-desc" data-en="Where comfort meets luxury" data-ar="حيث تلتقي الراحة بالفخامة">
+  حيث تلتقي الراحة بالفخامة
+</p>
+    <form class="booking-form">
+      <input type="date" name="checkin" />
+      <input type="date" name="checkout" />
+      <input type="number" name="guests" placeholder="عدد الضيوف" min="1" data-en="Number of guests" data-ar="عدد الضيوف" />
+      <button type="submit" data-en="Search" data-ar="بحث">بحث</button>
+    </form>
+  </section>
+
+  <section class="rooms">
+    <div class="room">
+      <img src="Deluxe Room.jpg" alt="Deluxe Room">
+      <h3 data-en="Deluxe Room" data-ar="غرفة ديلوكس">غرفة ديلوكس</h3>
+      <p data-en="From $199 per night" data-ar="ابتداءً من $199 لليلة">ابتداءً من $199 لليلة</p>
+      <button data-en="Details" data-ar="تفاصيل">تفاصيل</button>
+    </div>
+    <div class="room">
+      <img src="Luxury Suite.jpeg" alt="Suite">
+      <h3 data-en="Luxury Suite" data-ar="جناح فاخر">جناح فاخر</h3>
+      <p data-en="From $299 per night" data-ar="ابتداءً من $299 لليلة">ابتداءً من $299 لليلة</p>
+      <button data-en="Details" data-ar="تفاصيل">تفاصيل</button>
+    </div>
+    <div class="room">
+      <img src="Pic.jpg" alt="Standard Room">
+      <h3 data-en="Standard Room" data-ar="غرفة قياسية">غرفة قياسية</h3>
+      <p data-en="From $149 per night" data-ar="ابتداءً من $149 لليلة">ابتداءً من $149 لليلة</p>
+      <button data-en="Details" data-ar="تفاصيل">تفاصيل</button>
+    </div>
+
+  <script src="lang.js"></script>
+
+</body>
+</html>

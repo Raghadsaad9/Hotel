@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghad Hotel | contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .contact {
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+    .contact button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: goldenrod;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong id="site-title">فندق رغد</strong></div>
+    <nav id="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="rooms.html">الغرف</a>
+      <a href="services.html">الخدمات</a>
+      <a href="offers.html">العروض</a>
+      <a href="reviews.html">آراء العملاء</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+    <div>
+      <button id="lang-toggle" style="margin-left: 10px;">English</button>
+      <button id="book-now" style="background: goldenrod; color: white; padding: 10px 20px; border: none;" data-en="Book Now" data-ar="احجز الآن">احجز الآن</button>
+    </div>
+  </header>
+
+  <section class="contact">
+    <h2 data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</h2>
+    
+    <form>
+      <label for="name" data-en="Name" data-ar="الاسم">الاسم</label>
+      <input type="text" id="name" name="name" placeholder="الاسم" data-en="Your Name" data-ar="الاسم">
+
+      <label for="email" data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" data-en="Your Email" data-ar="البريد الإلكتروني">
+
+      <label for="message" data-en="Message" data-ar="الرسالة">الرسالة</label>
+      <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." data-en="Write your message here..." data-ar="اكتب رسالتك هنا..."></textarea>
+
+      <button type="submit" data-en="Send" data-ar="إرسال">إرسال</button>
+    </form>
+  </section>
+
+  <script src="lang.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  transition: direction 0.3s ease;
+}
+
+header {
+  background: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background-image: url('Pic.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.booking-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: inherit;
+  margin-top: 20px;
+}
+
+.booking-form input,
+.booking-form button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  background: #fff;
+}
+
+.room {
+  text-align: center;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  flex: 0 1 300px;
+}
+
+.room img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.room button {
+  background: goldenrod;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin: 10px 0;
+  }
+
+  .rooms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room {
+    width: 90%;
+  }
+}
+
+.review-card {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.review-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+body {
+  background-color: #F5F5F5;
+}
+
